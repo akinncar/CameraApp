@@ -5,9 +5,9 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 
-const RCTCamera = requireNativeComponent('RCTCamera');
+const RNCamera = requireNativeComponent('RNCamera');
 
-export default RCTCamera;
+export default RNCamera;
 
 // export default class Camera extends React.Component<PropsType, StateType> {
 //   async componentDidMount() {
@@ -16,6 +16,6 @@ export default RCTCamera;
 //   }
 
 //   render() {
-//     return <RCTCamera />;
+//     return <RNCamera />;
 //   }
 // }

@@ -1,4 +1,4 @@
-package com.cameraapp.RCTCamera;
+package com.cameraapp.RNCamera;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -12,7 +12,7 @@ public class RNCameraPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
         return Arrays.asList(
-//            new RCTCameraModule(reactApplicationContext),
+//            new RNCameraModule(reactApplicationContext),
 //            new CameraModule(reactApplicationContext)
         );
     }
@@ -20,7 +20,7 @@ public class RNCameraPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
         return Arrays.asList(
-            new RCTCameraViewManager()
+            new RNCameraViewManager()
         );
     }
 }

@@ -1,6 +1,5 @@
-package com.cameraapp.RCTCamera;
+package com.cameraapp.RNCamera;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.hardware.Camera;
 import android.util.Log;
@@ -9,13 +8,15 @@ import android.view.ViewGroup;
 
 import com.facebook.react.uimanager.ThemedReactContext;
 
-public class RCTCameraView extends ViewGroup{
-    public RCTCameraView(ThemedReactContext themedReactContext) {
+public class RNCameraView extends ViewGroup{
+    private RCTCameraViewFinder _viewFinder = null;
+
+    public RNCameraView(ThemedReactContext themedReactContext) {
         super(themedReactContext);
         try {
-            Camera.open(1);
+            Camera.open();
         } catch (Exception e) {
-            Log.e("RCTCamera", "failed", e);
+            Log.e("RNCamera", "failed", e);
         }
     }
 
@@ -23,4 +24,5 @@ public class RCTCameraView extends ViewGroup{
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         this.setBackgroundColor(Color.BLUE);
     }
+
 }

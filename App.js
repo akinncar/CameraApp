@@ -9,14 +9,14 @@
 import React from 'react';
 import {StyleSheet, View, Text, StatusBar} from 'react-native';
 
-import Camera from './RCTCamera';
+import RNCamera from './RNCamera';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Camera style={styles.square} />
+        <RNCamera style={styles.camera} />
         <Text>Hello RN</Text>
       </View>
     </>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  square: {
+  camera: {
     width: 200,
     height: 200,
   },
