@@ -12,7 +12,7 @@
                              AVCaptureFileOutputRecordingDelegate,
                              AVCaptureVideoDataOutputSampleBufferDelegate>
 
-@property(nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
+@property(nonatomic, strong) dispatch_queue_t sessionQueue;
 
 - (id)initWithBridge:(RCTBridge *)bridge;
 - (void)layoutSubviews;

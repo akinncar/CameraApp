@@ -1,6 +1,6 @@
 #import "RNCameraManager.h"
 #import <React/RCTViewManager.h>
-#import "RNCamera.m"
+#import "RNCamera.h"
 
 @interface RNCameraManager : RCTViewManager
 @end
