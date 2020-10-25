@@ -8,9 +8,7 @@
 
 @class RNCamera;
 
-@interface RNCamera : UIView<AVCaptureMetadataOutputObjectsDelegate,
-                             AVCaptureFileOutputRecordingDelegate,
-                             AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface RNCamera : UIView<AVCaptureMetadataOutputObjectsDelegate>
 
 @property(nonatomic, strong) dispatch_queue_t sessionQueue;
 
